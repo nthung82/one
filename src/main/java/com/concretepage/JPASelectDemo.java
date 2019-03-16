@@ -9,7 +9,7 @@ public class JPASelectDemo {
 		EntityManager entityManager = JPAUtility.getEntityManager();
 		
 		Employee emp = entityManager.find(Employee.class, new Integer(1));
-		Employee emp1 = entityManager.find(Employee.class, new Integer(2));
+		//Employee emp1 = entityManager.find(Employee.class, new Integer(2));
 		System.out.println("Name:"+ emp.getName()+", City:"+ emp.getCity());
 		JPAUtility.close();		
 		System.out.println("Done");
